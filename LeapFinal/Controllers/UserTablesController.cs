@@ -26,22 +26,22 @@ namespace LeapFinal.Controllers
             return db.UserTables;
         }
 
-        [Route("{id:int}")]
+        //[Route("{id:int}")]
 
-        // GET: api/UserTables/5
-        [ResponseType(typeof(UserTable))]
-        public async Task<IHttpActionResult> GetUserTable(string id)
-        {
-            UserTable userTable = await db.UserTables.FindAsync(id);
-            if (userTable == null)
-            {
-                return NotFound();
-            }
+        //// GET: api/UserTables/5
+        //[ResponseType(typeof(UserTable))]
+        //public async Task<IHttpActionResult> GetUserTable(string id)
+        //{
+        //    UserTable userTable = await db.UserTables.FindAsync(id);
+        //    if (userTable == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(userTable);
-        }
+        //    return Ok(userTable);
+        //}
 
-        [Route("{email}")]
+        [Route("{email}/")]
 
         public IQueryable<UserTable> GetUserByName(string email)
         {

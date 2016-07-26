@@ -20,5 +20,9 @@ namespace LeapFinal.Models
         }
 
         public System.Data.Entity.DbSet<LeapFinal.UserTable> UserTables { get; set; }
+
+        public System.Data.Entity.DbSet<LeapFinal.UserLanguageTable> UserLanguageTables { get; set; }
+
+        public System.Data.Entity.DbSet<LeapFinal.LanguageTable> LanguageTables { get; set; }
     }
 }
